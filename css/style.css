@@ -1,0 +1,147 @@
+/* common attributes */
+
+/* *{
+    transition: all 1.5s linear;
+} */
+/* body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+} */
+    *{
+    padding: 0;
+    margin: 0;
+    }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    transition: all .3s;
+}
+:root{
+    --myred:rgb(242, 84, 84);
+    --myred-layer: rgba(242, 84, 84, .85);
+}
+
+/* section heading */
+
+.section-heading h2{
+    position: relative;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section-heading h2::before{
+    content: attr(bg-title-letter);
+    position: absolute;
+    font-size: 2em;
+    font-weight: 900;
+    opacity: .06;
+    bottom: -.25em;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.section-heading hr{
+    width: 40px;
+    transition: all .3s;
+    margin: auto;
+    opacity: 1;
+    height: .5px;
+}
+.section-heading:hover hr{
+    width: 80px;
+}
+
+/* navbar */
+
+#navbar {
+    transition: all 1s;
+}
+.navbar-brand img {
+    width: 130px;
+}
+
+.nav-link {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* home */
+
+#home {
+height: 100vh;
+}
+.carousel-caption{
+    bottom: 5rem;
+}
+
+.carousel-caption h1{
+    bottom: 5rem;
+}
+
+/* fixed frame */
+
+.fixed-frame{
+    position: absolute;
+    z-index: 10;
+    border: solid;
+    border-width: 10px;
+    border-color: rgba(84, 237, 242, 0.80);
+
+}
+
+#fixed-frame-top{
+    width: 100%;
+    top: 100vh;
+}
+
+#fixed-frame-bottom{
+    width: 100%;
+    top: 190vh;
+}
+
+#fixed-frame-left{
+    height: 90vh;
+    top: 100vh;
+    left: 0;
+}
+
+#fixed-frame-right{
+    height: 90vh;
+    top: 100vh;
+    right: 0;
+}
+
+/* ueber uns */
+
+.content p{
+    text-align: justify;
+}
+
+/* dienstleistungen */
+
+/* kontank */
+
+.angebot-form h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.angebot-form button{
+    background-color: var(--myred);
+}
+.btn-send:hover{
+    opacity: 0.7;
+}
+.kontakt-line:hover h5{
+    color: var(--myred);
+}
+
+.kontakt-line i{
+    color: var(--myred);
+}
