@@ -23,6 +23,11 @@ img{
     width: 100%;
     transition: all .3s;
 }
+
+.generalImage{
+    width: 100%;
+    height: 100%;
+}
 :root{
     --myred:rgb(242, 84, 84);
     --myred-layer: rgba(242, 84, 84, .85);
@@ -125,6 +130,17 @@ height: 100vh;
 }
 
 /* dienstleistungen */
+
+.bgImage{
+    content: attr(bg-image);
+    background-image: content;
+    background-size: 100%;
+    background-position: center;
+}
+
+.bg-red{
+    background-color: red;
+}
 
 /* kontank */
 
