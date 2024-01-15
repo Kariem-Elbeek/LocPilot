@@ -128,17 +128,82 @@ height: 100vh;
     right: 0;
 }
 
-/* ueber uns */
+/* about us */
 
 .content p{
     text-align: justify;
 }
 
-/* dienstleistungen */
+#about-us .content{
+    background-image: url('../images/hello-panner2.png');
+    background-size: cover;
+    border-radius: 10%;
+    color: white;
+    font-weight: 600;
+}
+
+/* rounded text */
+
+.round-container {
+    /* --s:450px;  Size of the circle */
+    --p:15px;   /* padding */
+  
+    /* height: var(--s); */
+    /* width: var(--s); */
+    border-radius: 50%;
+    /* background: #333; */
+    /* color:#fff; */
+    margin:30px auto;
+    /* font-size:20px; */
+    text-align:justify;
+  }
+  
+  .round-container i,
+  .round-container::before {
+    content: '';
+    float: left;
+    height:100%;
+    width: 50%;
+    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+  }
+  
+  .round-container i {
+    float: right;
+    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
+  }
+
+/* /////////////// */
+  
+#about-us .content p{
+    background-color: rgba(47, 39, 102, .8);
+    /* background-color: aqua; */
+}
+
+/* services */
+
+.servicesimage {
+    background-image: url(../images/fields3-transformed.jpeg);
+    /* background-position: 100% 100%; */
+    height: 600px;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.servicesimage p{
+    font-weight: 500;
+    background-color: rgba(59, 102, 157, 1);
+    border-radius: 25%;
+    /* border:double seagreen; */
+    color: white;
+}
+
+.servicesimage h4{
+    color: white;
+}
 
 .bgImage{
     content: attr(bg-image);
-    background-image: content;
+    background-image: attr(bg-image);
     background-size: 100%;
     background-position: center;
 }
@@ -146,6 +211,15 @@ height: 100vh;
 .bg-red{
     background-color: red;
 }
+
+
+/* why us */
+
+#why-us img{
+    border-radius: 30%;
+    /* border: solid; */
+}
+
 
 /* kontank */
 
