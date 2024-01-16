@@ -89,6 +89,7 @@ $(window).scroll(function(){
     windowTop = $(window).scrollTop();
     windowBottom = windowTop + windowHeight;
     navbarShow();
+    console.log(`window top = ${windowTop} * window bottom = ${windowBottom} * window height = ${windowHeight} * navbar height = ${navbarHeight}`);
 
     if (windowTop + navbarHeight + 17 > fixedFrameUpperTop){
         fixedFrameUpper.css({'position': 'fixed', 'top' : `${navbarHeight+17}px`});
@@ -125,16 +126,16 @@ $(window).scroll(function(){
             aboutUsShowSmall();
         }
         if (windowBottom > servicesContentTop + servicesHeadingHeight){
-            servicesShowSmall();
+            servicesShowSmall('services');
         }
         if (windowBottom > trServicesContentTop + trServicesHeadingHeight){
-            servicesShowSmall();
+            servicesShowSmall('tr-services');
         }
         if (windowBottom > locServicesContentTop + locServicesHeadingHeight){
-            servicesShowSmall();
+            servicesShowSmall('loc-services');
         }
         if (windowBottom > trcrServicesContentTop + trcrServicesHeadingHeight){
-            servicesShowSmall();
+            servicesShowSmall('trcr-services');
         }
         if (windowBottom > referencesContentTop + refHeadingHeight){
             refShowSmall();
@@ -202,8 +203,8 @@ function servicesShowBig (c)
     $(`#${c} .content .content-part`).slideDown(2000);
 }
 
-function servicesShowSmall (){
-    $('#services .content .content-part').each(function(i){
+function servicesShowSmall (c){
+    $(`#${c} .content .content-part`).each(function(i){
         let element = $(this);
         showEachSlideDown(element, i);
     });    
