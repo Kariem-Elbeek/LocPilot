@@ -147,7 +147,7 @@ height: 100vh;
 /* #about-us .content .row */
 
 #about-us .content .row{
-    background-color: rgba(106, 116, 229, 0.314);
+    /* background-color: rgba(106, 116, 229, 0.314); */
     position: relative;
     height: 100%;
     width: 100%;
@@ -194,7 +194,7 @@ height: 100vh;
 /* /////////////// */
   
 #about-us .content p{
-    background-color: rgba(53, 39, 143, 0.8);
+    background-color: rgba(53, 39, 143, 0.9);
     padding: 20px;
     border-radius: 20px;
     /* background-color: aqua; */
