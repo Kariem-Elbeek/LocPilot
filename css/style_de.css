@@ -135,20 +135,39 @@ height: 100vh;
 }
 
 #about-us .content{
-    background-image: url('../images/hello-panner2.png');
-    background-size: cover;
+    /* height: 100vh; */
+    /* position: relative; */
+    background-image: url('../images/hello-panner3.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10%;
+}
+
+/* #about-us .content .row */
+
+#about-us .content .row{
+    background-color: rgba(106, 116, 229, 0.314);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 10px;
+    /* top: 0;
+    right: 0;
+    bottom: 0; */
     color: white;
     font-weight: 600;
+    border-radius: 10%;
+
 }
+
 
 /* rounded text */
 
 .round-container {
-    /* --s:450px;  Size of the circle */
-    --p:15px;   /* padding */
-  
-    /* height: var(--s); */
+     /* --s:450px;  Size of the circle */
+     --p:15px;   /* padding */
+    height: 250px;
     /* width: var(--s); */
     border-radius: 50%;
     /* background: #333; */
@@ -156,31 +175,72 @@ height: 100vh;
     margin:30px auto;
     /* font-size:20px; */
     text-align:justify;
-  }
-  
-  .round-container i,
-  .round-container::before {
+}
+
+.round-container i,
+.round-container::before {
     content: '';
     float: left;
     height:100%;
     width: 50%;
     shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
-  }
-  
-  .round-container i {
+}
+
+.round-container i {
     float: right;
     shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
-  }
+}
 
 /* /////////////// */
   
 #about-us .content p{
-    background-color: rgba(47, 39, 102, .8);
+    background-color: rgba(53, 39, 143, 0.8);
+    padding: 20px;
+    border-radius: 20px;
     /* background-color: aqua; */
 }
 
+/* .bestprice {
+    background-image: url(../images/bestprice2.png);
+} */
 
 /* services */
+
+#services .content .img-row{
+    background-image: url(../images/fields.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+/* #services .content .col-12 .col-lg-4{
+    display: flex;
+    height: 100%;
+} */
+
+#services .content p{
+    font-weight: 600;
+}
+#services .content .subrow  .content-part{
+    /* flex: 1;
+    display: flex; */
+    flex-direction: column;
+    /* padding: 10px; */
+    /* background-color: rgba(84, 123, 242, 0.85); */
+    border-radius: 10%;
+}
+
+
+
+#services .content .prgrph{
+    /* height: 100%; */
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(128, 186, 240, 0.7);
+    border-radius: 10%;
+}
+
 
 .servicesimage {
     background-image: url(../images/fields3-transformed.jpeg);
@@ -192,7 +252,7 @@ height: 100vh;
 
 .servicesimage p{
     font-weight: 500;
-    background-color: rgba(59, 102, 157, 1);
+    /* background-color: rgba(59, 102, 157, 1); */
     border-radius: 25%;
     /* border:double seagreen; */
     color: white;
@@ -211,6 +271,17 @@ height: 100vh;
 
 .bg-red{
     background-color: red;
+}
+
+
+/* references  */
+
+#references .content .img-row{
+    background-image: url(../images/Referenzen.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
 }
 
 

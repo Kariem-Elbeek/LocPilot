@@ -201,6 +201,7 @@ function aboutUsShowSmall () {
 function servicesShowBig (c) 
 {
     $(`#${c} .content .content-part`).slideDown(2000);
+    $(`#${c} .content .subrow .content-part`).css('display', 'flex');
 }
 
 function servicesShowSmall (c){
